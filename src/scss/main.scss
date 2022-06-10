@@ -186,7 +186,7 @@ li {
   gap: 10px;
 }
 .main-tours {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .main-tours__container {
@@ -301,6 +301,7 @@ li {
     justify-content: flex-end;
     align-items: center;
     padding: 30px;
+    padding-top: 0;
     margin: 0;
     height: 12px;
     bottom: 0;
@@ -649,6 +650,11 @@ li {
   .section-title {
     margin-bottom: 30px;
   }
+  background-image: url("../img/faq-bg.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
 }
 .faq__list {
   display: flex;
@@ -656,7 +662,6 @@ li {
   flex-wrap: wrap;
   gap: 30px;
   .list-item {
-    border-radius: 4px;
     flex: 0 0 100%;
     .list-item__body {
       display: none;
@@ -683,9 +688,9 @@ li {
     }
   }
   .list-item__wrapper {
+    border-radius: 8px;
     background: #ffffff;
     border: 1px solid #f5f5f7;
-    border-radius: 4px;
     padding: 24px;
     transition: box-shadow 0.3s ease-in-out;
     &.open {
