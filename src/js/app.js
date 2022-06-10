@@ -39,7 +39,6 @@ AOS.init({
 });
 
 
-
 const mainToursSlider = new Swiper('.main-tours__slider', {
     modules: [EffectFade, Navigation, Pagination],
     slidesPerView: 1,
@@ -55,9 +54,30 @@ const mainToursSlider = new Swiper('.main-tours__slider', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: 1,
     },
 
-})
+});
+
+const listItemSlider = new Swiper('.list-item__slider', {
+    modules: [EffectFade, Pagination, Navigation],
+    slidesPerView: 1,
+    speed: 800,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: 1,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
 //логика работы меню бургер
 document.body.addEventListener('click', (e) => {
     const target = e.target;
@@ -76,6 +96,12 @@ document.querySelectorAll('input[type="tel"]').forEach(input => {
     const mask = IMask(input, {
         mask: '+{7}(000) 000-00-00'
     });
+});
+
+
+$("[data-toggle-btn]").click(function () {
+    $(this).parent().toggleClass('open')
+    $(this).parent().find("[data-toggle-content]").slideToggle("slow");
 });
 
 

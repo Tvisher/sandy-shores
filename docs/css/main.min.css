@@ -984,7 +984,7 @@ li {
 
 *::selection {
   background: #ffb906;
-  color: #6e6e73;
+  color: #1d1d1f;
 }
 
 .container {
@@ -1003,7 +1003,7 @@ li {
 .btn {
   font-size: 18px;
   font-family: "Gilroy";
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   width: fit-content;
   align-items: center;
@@ -1033,7 +1033,7 @@ li {
 
 .section-title {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 100%;
 }
 
@@ -1085,6 +1085,7 @@ li {
   position: absolute;
   right: 0;
   top: -60px;
+  z-index: -1;
 }
 
 .main-title {
@@ -1187,74 +1188,6 @@ li {
   margin-top: auto;
 }
 
-.main-tours__wrapper .tour-content__from {
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-}
-
-.main-tours__wrapper .tour-content__from:before {
-  display: block;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  content: "";
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.22815 0.320297C6.55934 1.12502 6.71552 1.81939 6.67721 2.31633C6.63206 2.90195 6.38356 3.3732 5.48456 4.57811C5.10543 5.08623 4.95996 5.31933 4.81718 5.64742C4.52002 6.33033 4.34702 7.33817 4.3839 8.17186L4.40049 8.54686L4.31431 8.31248C4.02534 7.52648 3.70718 7.17011 2.76818 6.58058C2.61546 6.4847 2.48046 6.40623 2.46821 6.40623C2.45596 6.40623 2.47265 6.48708 2.50531 6.58592C2.65206 7.02986 2.69427 7.61064 2.60927 8.01561C2.54046 8.34336 2.38277 8.62464 1.99618 9.10936C1.25649 10.0368 0.942649 10.6159 0.802118 11.3125C0.650462 12.0644 0.744743 12.9632 1.03584 13.5405C1.60956 14.6784 2.99862 15.4522 4.91568 15.702C5.39112 15.7639 5.3854 15.7647 5.18655 15.664C4.96015 15.5495 4.60312 15.1925 4.44256 14.9201C4.01171 14.1892 3.95449 13.3878 4.28387 12.6977C4.42052 12.4114 4.68462 12.0945 5.36009 11.4062C5.68906 11.0711 6.01487 10.7125 6.08415 10.6094C6.48449 10.0135 6.64812 9.37339 6.61955 8.51499L6.60674 8.13008L6.79527 8.26036C7.2254 8.55748 7.78927 9.17742 8.04327 9.63239C8.18315 9.88292 8.33649 10.341 8.36037 10.5797C8.39543 10.9299 8.39487 10.9291 8.50446 10.7917C8.69481 10.5531 8.75727 10.3847 8.77787 10.0545L8.7969 9.74939L9.02027 10.1169C9.72465 11.2756 10.073 12.2917 10.0729 13.1875C10.0729 13.8371 9.96196 14.3364 9.70849 14.8281C9.56068 15.1148 9.16596 15.5414 8.94534 15.6529C8.87231 15.6898 8.81252 15.7253 8.81252 15.7317C8.81252 15.7611 9.41856 15.6076 9.74624 15.4953C11.6018 14.859 12.7999 13.5764 13.1521 11.8493C13.3391 10.9324 13.2935 9.94808 13.012 8.82811C12.8951 8.36286 12.5648 7.39483 12.3296 6.82811C12.026 6.09677 11.4339 4.91833 11.0106 4.20311L10.6406 3.57811L10.6201 4.09373C10.5981 4.64377 10.5563 4.85914 10.4181 5.13333C10.3112 5.34533 10.0572 5.71345 9.94077 5.82502L9.84943 5.91252L9.82852 5.69845C9.71596 4.54608 9.40227 3.67608 8.75159 2.71158C8.09568 1.73942 7.44209 1.06917 6.60681 0.512172C6.25668 0.278703 6.19902 0.249485 6.22815 0.320297Z' fill='%23DB2222'/%3e%3c/svg%3e ");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.main-tours__wrapper .tour-content__name {
-  font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.main-tours__wrapper .tour-content__footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
-.main-tours__wrapper .tour-content__date,
-.main-tours__wrapper .tour-content__duration,
-.main-tours__wrapper .tour-content__raiting {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: #fff;
-}
-
-.main-tours__wrapper .tour-content__date:before,
-.main-tours__wrapper .tour-content__duration:before,
-.main-tours__wrapper .tour-content__raiting:before {
-  display: block;
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.main-tours__wrapper .tour-content__date::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.3333 6.22221H10.1586L7.23913 1.11274C7.2002 1.04472 7.14399 0.988186 7.07618 0.94887C7.00838 0.909554 6.93139 0.88885 6.85301 0.888855L5.03356 0.888855C4.73828 0.888855 4.52522 1.17136 4.60634 1.45525L5.96829 6.22221H3.11105L1.91105 4.62221C1.82716 4.51026 1.69521 4.44443 1.55549 4.44443H0.444651C0.155483 4.44443 -0.0567406 4.7161 0.0135375 4.99665L0.888819 8L0.0135375 11.0033C-0.0567406 11.2839 0.155483 11.5556 0.444651 11.5556H1.55549C1.69549 11.5556 1.82716 11.4897 1.91105 11.3778L3.11105 9.77779H5.96829L4.60634 14.5445C4.52522 14.8284 4.73828 15.1111 5.03356 15.1111H6.85301C7.01246 15.1111 7.15968 15.0256 7.23885 14.8873L10.1586 9.77779H13.3333C14.3153 9.77779 16 8.98195 16 8C16 7.01805 14.3153 6.22221 13.3333 6.22221Z' fill='%23FFB906'/%3e%3c/svg%3e ");
-}
-
-.main-tours__wrapper .tour-content__duration::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.85034 16C11.3179 16 13.5716 14.8773 15.0646 13.0378C15.2855 12.7656 15.0447 12.3681 14.7033 12.4331C10.822 13.1723 7.25762 10.1963 7.25762 6.27825C7.25762 4.02131 8.46581 1.94591 10.4294 0.828438C10.7321 0.656188 10.656 0.197281 10.3121 0.13375C9.8299 0.0448416 9.34063 7.30105e-05 8.85034 0C4.43444 0 0.850342 3.57847 0.850342 8C0.850342 12.4159 4.42881 16 8.85034 16Z' fill='%23FFB906'/%3e%3c/svg%3e ");
-}
-
-.main-tours__wrapper .tour-content__raiting::before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 0.499999L9.88854 6.22949H16L11.0557 9.77051L12.9443 15.5L8 11.959L3.05573 15.5L4.94427 9.77051L0 6.22949H6.11146L8 0.499999Z' fill='%23FFB906'/%3e%3c/svg%3e ");
-}
-
 .main-tours__wrapper .tour-content__action {
   margin-top: 30px;
   display: flex;
@@ -1320,6 +1253,434 @@ li {
   width: 12px;
   height: 12px;
   background-color: #fff;
+}
+
+.tour-content__from {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.tour-content__from:before {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  content: "";
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.22815 0.320297C6.55934 1.12502 6.71552 1.81939 6.67721 2.31633C6.63206 2.90195 6.38356 3.3732 5.48456 4.57811C5.10543 5.08623 4.95996 5.31933 4.81718 5.64742C4.52002 6.33033 4.34702 7.33817 4.3839 8.17186L4.40049 8.54686L4.31431 8.31248C4.02534 7.52648 3.70718 7.17011 2.76818 6.58058C2.61546 6.4847 2.48046 6.40623 2.46821 6.40623C2.45596 6.40623 2.47265 6.48708 2.50531 6.58592C2.65206 7.02986 2.69427 7.61064 2.60927 8.01561C2.54046 8.34336 2.38277 8.62464 1.99618 9.10936C1.25649 10.0368 0.942649 10.6159 0.802118 11.3125C0.650462 12.0644 0.744743 12.9632 1.03584 13.5405C1.60956 14.6784 2.99862 15.4522 4.91568 15.702C5.39112 15.7639 5.3854 15.7647 5.18655 15.664C4.96015 15.5495 4.60312 15.1925 4.44256 14.9201C4.01171 14.1892 3.95449 13.3878 4.28387 12.6977C4.42052 12.4114 4.68462 12.0945 5.36009 11.4062C5.68906 11.0711 6.01487 10.7125 6.08415 10.6094C6.48449 10.0135 6.64812 9.37339 6.61955 8.51499L6.60674 8.13008L6.79527 8.26036C7.2254 8.55748 7.78927 9.17742 8.04327 9.63239C8.18315 9.88292 8.33649 10.341 8.36037 10.5797C8.39543 10.9299 8.39487 10.9291 8.50446 10.7917C8.69481 10.5531 8.75727 10.3847 8.77787 10.0545L8.7969 9.74939L9.02027 10.1169C9.72465 11.2756 10.073 12.2917 10.0729 13.1875C10.0729 13.8371 9.96196 14.3364 9.70849 14.8281C9.56068 15.1148 9.16596 15.5414 8.94534 15.6529C8.87231 15.6898 8.81252 15.7253 8.81252 15.7317C8.81252 15.7611 9.41856 15.6076 9.74624 15.4953C11.6018 14.859 12.7999 13.5764 13.1521 11.8493C13.3391 10.9324 13.2935 9.94808 13.012 8.82811C12.8951 8.36286 12.5648 7.39483 12.3296 6.82811C12.026 6.09677 11.4339 4.91833 11.0106 4.20311L10.6406 3.57811L10.6201 4.09373C10.5981 4.64377 10.5563 4.85914 10.4181 5.13333C10.3112 5.34533 10.0572 5.71345 9.94077 5.82502L9.84943 5.91252L9.82852 5.69845C9.71596 4.54608 9.40227 3.67608 8.75159 2.71158C8.09568 1.73942 7.44209 1.06917 6.60681 0.512172C6.25668 0.278703 6.19902 0.249485 6.22815 0.320297Z' fill='%23DB2222'/%3e%3c/svg%3e ");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tour-content__name {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tour-content__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.tour-content__date,
+.tour-content__duration,
+.tour-content__raiting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.tour-content__date:before,
+.tour-content__duration:before,
+.tour-content__raiting:before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tour-content__date::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.3333 6.22221H10.1586L7.23913 1.11274C7.2002 1.04472 7.14399 0.988186 7.07618 0.94887C7.00838 0.909554 6.93139 0.88885 6.85301 0.888855L5.03356 0.888855C4.73828 0.888855 4.52522 1.17136 4.60634 1.45525L5.96829 6.22221H3.11105L1.91105 4.62221C1.82716 4.51026 1.69521 4.44443 1.55549 4.44443H0.444651C0.155483 4.44443 -0.0567406 4.7161 0.0135375 4.99665L0.888819 8L0.0135375 11.0033C-0.0567406 11.2839 0.155483 11.5556 0.444651 11.5556H1.55549C1.69549 11.5556 1.82716 11.4897 1.91105 11.3778L3.11105 9.77779H5.96829L4.60634 14.5445C4.52522 14.8284 4.73828 15.1111 5.03356 15.1111H6.85301C7.01246 15.1111 7.15968 15.0256 7.23885 14.8873L10.1586 9.77779H13.3333C14.3153 9.77779 16 8.98195 16 8C16 7.01805 14.3153 6.22221 13.3333 6.22221Z' fill='%23FFB906'/%3e%3c/svg%3e ");
+}
+
+.tour-content__duration::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.85034 16C11.3179 16 13.5716 14.8773 15.0646 13.0378C15.2855 12.7656 15.0447 12.3681 14.7033 12.4331C10.822 13.1723 7.25762 10.1963 7.25762 6.27825C7.25762 4.02131 8.46581 1.94591 10.4294 0.828438C10.7321 0.656188 10.656 0.197281 10.3121 0.13375C9.8299 0.0448416 9.34063 7.30105e-05 8.85034 0C4.43444 0 0.850342 3.57847 0.850342 8C0.850342 12.4159 4.42881 16 8.85034 16Z' fill='%23FFB906'/%3e%3c/svg%3e ");
+}
+
+.tour-content__raiting::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 0.499999L9.88854 6.22949H16L11.0557 9.77051L12.9443 15.5L8 11.959L3.05573 15.5L4.94427 9.77051L0 6.22949H6.11146L8 0.499999Z' fill='%23FFB906'/%3e%3c/svg%3e ");
+}
+
+.hotels .section-title,
+.hotels .section-descr {
+  text-align: center;
+  margin: auto;
+  max-width: 850px;
+}
+
+.hotels .section-title {
+  margin-bottom: 10px;
+}
+
+.hotels .section-descr {
+  margin-bottom: 30px;
+}
+
+.hotels .hotels__tabs {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  background: #f5f5f7;
+  border-radius: 50px;
+}
+
+.hotels .hotels__tabs .tab-item {
+  cursor: pointer;
+  border-radius: 50px;
+  color: #9b9b9b;
+  flex: 0 0 50%;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.hotels .hotels__tabs .tab-item.active {
+  background: #ffb906;
+  color: #1d1d1f;
+}
+
+.hotels__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.hotels__list .list-item {
+  flex: 0 0 33.333%;
+  padding: 15px;
+}
+
+.hotels__list .list-item__wrapper {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.hotels__list .list-item__body {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.hotels__list .tour-content__from {
+  color: #db2222;
+  margin-bottom: 8px;
+}
+
+.hotels__list .tour-content__name {
+  color: #1d1d1f;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.hotels__list .tour-content__date,
+.hotels__list .tour-content__duration {
+  color: #1d1d1f;
+}
+
+.hotels__list .tour-content__data {
+  margin: 20px 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.hotels__list .tour-content__data .data-item {
+  margin-bottom: 10px;
+  flex: 0 0 50%;
+}
+
+.hotels__list .tour-content__data .data-item .name {
+  font-size: 14px;
+  color: #6e6e73;
+}
+
+.hotels__list .tour-content__data .data-item .param {
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.hotels__list .tours__item-price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.hotels__list .price-item {
+  flex: 0 0 50%;
+  font-size: 12px;
+  color: #1d1d1f;
+}
+
+.hotels__list .price-item .price__money {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.hotels__list .list-item__head {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 0;
+  padding-top: 68.6%;
+  width: 100%;
+}
+
+.hotels__list .list-item__head .list-item__slider {
+  height: 100%;
+}
+
+.hotels__list .list-item__head .list-item__slider .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hotels__list .list-item__head .list-item__slider-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hotels__list .list-item__head .list-item__slider-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.hotels__list .list-item__head .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hotels__list .list-item__raiting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.hotels__list .list-item__raiting .star {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 0.499999L9.88854 6.22949H16L11.0557 9.77051L12.9443 15.5L8 11.959L3.05573 15.5L4.94427 9.77051L0 6.22949H6.11146L8 0.499999Z' fill='%23FFB906'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hotels__list .list-item__discount {
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: #ffb906;
+  font-size: 14px;
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+.hotels__list .list-item__vizor {
+  margin-top: auto;
+  margin-left: auto;
+  display: flex;
+  background: #38cb89;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.hotels__list .list-item__vizor span {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hotels__list .list-item__vizor span::before {
+  margin-right: 10px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='14' viewBox='0 0 20 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.96264 0.0794308C7.31893 0.229717 5.41125 0.928163 4.04011 1.88164L3.61891 2.1745L1.80946 2.19806L0 2.22162L0.807106 3.16713L1.61413 4.11255L1.21271 4.60317C0.210277 5.82875 -0.207303 7.62142 0.119044 9.29935C0.484858 11.1806 1.87055 12.8063 3.60798 13.3925C4.21486 13.5972 5.48078 13.64 6.14087 13.4781C6.67757 13.3464 7.59665 12.8699 8.05562 12.4852C8.41091 12.1875 8.44121 12.1775 8.53791 12.3256C8.78058 12.6971 9.93549 13.9991 10.0231 14C10.0759 14.0006 10.1663 13.9281 10.2241 13.839C10.4238 13.5307 11.5313 12.2495 11.5979 12.2495C11.6348 12.2495 11.7983 12.3655 11.9616 12.5073C12.7567 13.1982 13.8194 13.5716 14.9912 13.5716C16.426 13.5716 17.4575 13.1055 18.4962 11.9877C19.7249 10.6653 20.2406 8.84043 19.8945 7.03849C19.7417 6.243 19.23 5.11954 18.7623 4.55272L18.392 4.10388L19.1633 3.19629C19.5876 2.69718 19.9347 2.26375 19.9347 2.23327C19.9347 2.20279 19.1435 2.17783 18.1765 2.17783H16.4182L15.7915 1.76743C14.3488 0.822628 12.6378 0.233745 10.8844 0.0786423C10.323 0.0289848 9.82368 -0.00604698 9.77489 0.000871793C9.72602 0.00770299 9.36053 0.0430853 8.96264 0.0794308ZM13.0224 2.40221C12.6583 2.27689 12.0481 2.11863 11.6663 2.05049C10.8737 1.90914 9.91572 1.83697 9.44493 1.8833C8.53196 1.97307 7.76119 2.13229 7.07369 2.37296L6.31007 2.64025L6.6418 2.795C7.69246 3.28501 8.88556 4.4605 9.40562 5.51793C9.55634 5.82437 9.76051 6.3707 9.85938 6.73196C9.95824 7.09323 10.0418 7.29028 10.0452 7.16986C10.0557 6.78652 10.427 5.77489 10.7627 5.21517C11.3576 4.22307 12.305 3.32635 13.276 2.83617L13.6843 2.63L13.0224 2.40221ZM6.4337 4.86608C7.86544 5.63477 8.62834 7.37865 8.24613 9.00902C7.70211 11.3294 5.44067 12.4448 3.47616 11.3615C1.49911 10.2713 1.07903 7.26348 2.66833 5.57688C3.39996 4.80048 4.02749 4.54046 5.10661 4.56665C5.83116 4.58425 5.96532 4.61455 6.4337 4.86608ZM4.05136 9.77534C2.90312 8.93283 2.96743 7.13588 4.17033 6.45118C4.95766 6.00304 5.7982 6.17697 6.3714 6.90659C6.96405 7.661 6.93543 8.78316 6.30541 9.49001C5.92826 9.91311 5.58045 10.06 4.95525 10.06C4.50632 10.06 4.38888 10.023 4.05136 9.77534ZM17.3295 10.7129C18.9577 8.98091 18.4938 5.98894 16.4251 4.87922C15.9377 4.61788 15.8054 4.58714 15.0763 4.56569C14.4065 4.54598 14.1919 4.57409 13.8257 4.72919C12.9484 5.10097 12.3276 5.74249 11.9161 6.70253C11.7215 7.15655 11.697 7.31646 11.6963 8.13323C11.6957 8.98748 11.7139 9.09494 11.9535 9.64608C12.9641 11.9706 15.6467 12.503 17.3295 10.7129ZM14.3884 6.27015C13.9894 6.43515 13.554 6.87375 13.3764 7.28958C12.9668 8.24778 13.2344 9.24085 14.0547 9.80766C14.3627 10.0205 14.5035 10.06 14.9541 10.06C15.874 10.06 16.4991 9.52925 16.7336 8.54923C17.0117 7.38705 16.1047 6.19562 14.9554 6.2134C14.7098 6.21717 14.4547 6.24274 14.3884 6.27015Z' fill='black'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hotels__list .swiper-button-next:after,
+.hotels__list .swiper-button-prev:after {
+  font-size: 32px;
+  color: #fff;
+}
+
+.hotels__list .swiper-button-next,
+.hotels__list .swiper-button-prev {
+  z-index: 3;
+  transition: transform 0.3s ease-in-out 0.3s;
+}
+
+.hotels__list .swiper-button-prev {
+  transform: translateX(-150%);
+}
+
+.hotels__list .swiper-button-next {
+  transform: translateX(150%);
+}
+
+.hotels__list .list-item__head:hover .swiper-button-next,
+.hotels__list .list-item__head:hover .swiper-button-prev {
+  transition-delay: 0s;
+  transform: translateX(0%);
+}
+
+.hotels__list .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  margin: 0;
+  height: 12px;
+  bottom: 0;
+}
+
+.hotels__list .swiper-pagination .swiper-pagination-bullet {
+  transition: all 0.2s ease-in-out;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+
+.hotels__list .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.hotels__list .list-item__footer {
+  margin-top: auto;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  gap: 30px;
+}
+
+.hotels__more {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq .section-title {
+  margin-bottom: 30px;
+}
+
+.faq__list {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.faq__list .list-item {
+  border-radius: 4px;
+  flex: 0 0 100%;
+}
+
+.faq__list .list-item .list-item__body {
+  display: none;
+  margin-top: 24px;
+  color: #6e6e73;
+  font-size: 16px;
+}
+
+.faq__list .list-item .list-item__head {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1d1d1f;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.faq__list .list-item .list-item__head .ico {
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq__list .list-item .list-item__head .ico path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.faq__list .list-item__wrapper {
+  background: #ffffff;
+  border: 1px solid #f5f5f7;
+  border-radius: 4px;
+  padding: 24px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.faq__list .list-item__wrapper.open {
+  box-shadow: 0px 4px 16px rgba(133, 149, 180, 0.24);
+}
+
+.faq__list .list-item__wrapper.open .list-item__head .ico {
+  transform: rotate(180deg);
+}
+
+.faq__list .list-item__wrapper.open .list-item__head .ico path {
+  fill: #ffb906;
 }
 
 @media screen and (max-width: 768px) {
