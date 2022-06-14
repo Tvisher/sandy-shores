@@ -1,12 +1,12 @@
 'use strict';
 import * as baseFunction from './modules/functions.js';
 import './vendors/vendors.js';
-import Swiper, {
-    Navigation,
-    Pagination,
-    Autoplay,
-    EffectFade,
-} from 'swiper';
+// import Swiper, {
+//     Navigation,
+//     Pagination,
+//     Autoplay,
+//     EffectFade,
+// } from 'swiper';
 
 import AOS from 'aos';
 import IMask from 'imask';
@@ -38,7 +38,7 @@ AOS.init({
 
 
 const mainToursSlider = new Swiper('.main-tours__slider', {
-    modules: [EffectFade, Navigation, Pagination],
+    // modules: [EffectFade, Navigation, Pagination],
     slidesPerView: 1,
     speed: 800,
     effect: 'fade',
@@ -58,7 +58,7 @@ const mainToursSlider = new Swiper('.main-tours__slider', {
 });
 
 const listItemSlider = new Swiper('.list-item__slider', {
-    modules: [EffectFade, Pagination, Navigation],
+    // modules: [EffectFade, Pagination, Navigation],
     slidesPerView: 1,
     speed: 800,
     effect: 'fade',
@@ -76,6 +76,27 @@ const listItemSlider = new Swiper('.list-item__slider', {
     },
 
 });
+
+
+
+const reviewsSlider = new Swiper('.reviews__slider', {
+    // modules: [Navigation],
+    speed: 800,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        576: {
+            spaceBetween: 30
+        }
+    }
+});
+
+
+
 //логика работы меню бургер
 document.body.addEventListener('click', (e) => {
     const target = e.target;
