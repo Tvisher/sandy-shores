@@ -94,9 +94,9 @@
                                 <a href="#" class="btn ghostBtn" data-open-book>Оставить заявку</a>
                             </div>
                         </div>
-                        <div class="first-screen__bg-image">
+                        <!-- <div class="first-screen__bg-image">
                             <img src="@img/first-screen-bt.png" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -272,12 +272,12 @@
             </div>`
         </section>
         <section class="hotels">
-            <div class="bgi-r">
+            <!-- <div class="bgi-r">
                 <img src="@img/palm-r.png" alt="">
             </div>
             <div class="bgi-l">
                 <img src="@img/palm-l.png" alt="">
-            </div>
+            </div> -->
             <div class="container">
                 <h2 class="section-title">Подбор туров</h2>
                 <p class="section-descr">Вы сможете приобрести туры на Мальдивы из Алматы. На нашем сайте мы разместили цены на путевки на Мальдивы из Алматы в 2022 году. Чтобы подобрать подходящий тур для отдыха на Мальдивах выберите дату поездки</p>
@@ -1389,33 +1389,15 @@
         });
     }
     modalSliderInit();
-    // //Дописываем к url префикс в конце для работы popstate события
-    // function updateURL(someText) {
-    //     if (history.pushState) {
-    //         var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-    //         var newUrl = baseUrl + someText;
-    //         history.pushState(null, null, newUrl);
-    //     }
-    //     else {
-    //         console.warn('History API не поддерживается');
-    //     }
-    // }
-    // // Функция описывающая возможность закрыть модалку с конкретным туром при нажатии кнопки назад в браузере
-    // let tourCounter = false;
-    // window.addEventListener("popstate", function (e) {
-    //     const portfolioWork = document.querySelector('.tour-modal');
-    //     tourCounter = portfolioWork.classList.contains('show');
-    //     tourCounter && portfolioWork.classList.remove('show');
-    //     updateURL('');
-    // }, false);
-    // Тут при клике на кнопки с турами, описывается логика открытия модалки и добавлению к url префикса. Сюда же можно написать ajax за данными по конкретному туру.
+
+    // Логика кнопок открытия модалки со слайдером
     document.querySelectorAll('[data-open-tour]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             document.querySelector('.tour-modal').classList.add('show');
         })
     });
-
+    // Логика кнопок открытия модалки с формой обратной связи 
     document.querySelectorAll('[data-open-book]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();

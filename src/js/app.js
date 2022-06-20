@@ -1,19 +1,11 @@
 'use strict';
 import * as baseFunction from './modules/functions.js';
 import './vendors/vendors.js';
-// import Swiper, {
-//     Navigation,
-//     Pagination,
-//     Autoplay,
-//     EffectFade,
-// } from 'swiper';
-
 import AOS from 'aos';
 import IMask from 'imask';
 
 // Проверка поддержки webP
 baseFunction.testWebP();
-
 window.addEventListener('load', (e) => {
     document.body.style.opacity = 1;
 });
@@ -36,9 +28,7 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-
 const mainToursSlider = new Swiper('.main-tours__slider', {
-    // modules: [EffectFade, Navigation, Pagination],
     slidesPerView: 1,
     speed: 800,
     effect: 'fade',
@@ -58,7 +48,6 @@ const mainToursSlider = new Swiper('.main-tours__slider', {
 });
 
 const listItemSlider = new Swiper('.list-item__slider', {
-    // modules: [EffectFade, Pagination, Navigation],
     slidesPerView: 1,
     speed: 800,
     effect: 'fade',
@@ -77,10 +66,7 @@ const listItemSlider = new Swiper('.list-item__slider', {
 
 });
 
-
-
 const reviewsSlider = new Swiper('.reviews__slider', {
-    // modules: [Navigation],
     speed: 800,
     slidesPerView: 'auto',
     spaceBetween: 10,
@@ -95,20 +81,21 @@ const reviewsSlider = new Swiper('.reviews__slider', {
     }
 });
 
-//логика работы меню бургер
 document.body.addEventListener('click', (e) => {
     const target = e.target;
+    //логика работы меню бургер
     if (target.closest('[data-burger-menu]')) {
         target.closest('[data-burger-menu]').classList.toggle('active');
         document.querySelector('[data-header-menu]').classList.toggle('show');
         document.body.classList.toggle('hidden');
     }
+    // Закрытие модального окна конкретного тура
     if (target.closest('.tour-modal.show') && !target.closest('.tour-modal__content')) {
         target.closest('.tour-modal.show').classList.remove('show');
     }
-
+    // Закрытие модального окна форфмы обратной связи
     if (target.closest('.book-modal.show') && !target.closest('.book-modal__wrapper')) {
-        target.closest('.book-modal.show'ы).classList.remove('show');
+        target.closest('.book-modal.show').classList.remove('show');
     }
 });
 
@@ -116,18 +103,16 @@ document.body.addEventListener('click', (e) => {
 document.querySelectorAll('input[type="tel"]').forEach(input => {
     const mask = IMask(input, {
         mask: '+{7}(000) 000-00-00',
-
     });
 });
 
-
+//Аккардеон секции faq
 $("[data-toggle-btn]").click(function () {
     $(this).parent().toggleClass('open')
     $(this).parent().find("[data-toggle-content]").slideToggle("slow");
 });
 
-
-
+//Календарь в модалке
 $(function () {
     $.datepicker.regional['ru'] = {
         closeText: 'Закрыть',
