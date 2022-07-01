@@ -47,24 +47,24 @@ const mainToursSlider = new Swiper('.main-tours__slider', {
 
 });
 
-const listItemSlider = new Swiper('.list-item__slider', {
-    slidesPerView: 1,
-    speed: 800,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: 1,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+// const listItemSlider = new Swiper('.list-item__slider', {
+//     slidesPerView: 1,
+//     speed: 800,
+//     effect: 'fade',
+//     fadeEffect: {
+//         crossFade: true
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//         clickable: 1,
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
 
-});
+// });
 
 const reviewsSlider = new Swiper('.reviews__slider', {
     speed: 800,
@@ -96,6 +96,10 @@ document.body.addEventListener('click', (e) => {
     // Закрытие модального окна форфмы обратной связи
     if (target.closest('.book-modal.show') && !target.closest('.book-modal__wrapper')) {
         target.closest('.book-modal.show').classList.remove('show');
+    }
+
+    if (target.closest('.hidden-menu__list a') && document.querySelector('.hidden-menu.show')) {
+        document.querySelector('.hidden-menu.show').classList.remove('show');
     }
 });
 

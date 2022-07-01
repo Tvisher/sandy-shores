@@ -2904,7 +2904,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
   font-family: "Gilroy";
   font-size: 18px;
   font-weight: 400;
@@ -2918,7 +2917,6 @@ body {
 }
 
 body.hidden {
-  overflow: hidden;
   touch-action: none;
   -ms-touch-action: none;
 }
