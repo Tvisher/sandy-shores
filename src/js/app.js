@@ -106,7 +106,7 @@ document.body.addEventListener('click', (e) => {
 // Маска на номера телефона
 document.querySelectorAll('input[type="tel"]').forEach(input => {
     const mask = IMask(input, {
-        mask: '+{7}(000) 000-00-00',
+        mask: '+{0}(000) 000-00-00',
     });
 });
 
