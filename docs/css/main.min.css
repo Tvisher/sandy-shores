@@ -5136,6 +5136,35 @@ html .ui-button.ui-state-disabled:active {
   box-shadow: 0px 10px 16px rgba(38, 40, 45, 0.16);
 }
 
+.styles-zone {
+  transition: color 0.85s ease-in-out 0.5s;
+  padding: 0 3px;
+  display: inline;
+  position: relative;
+}
+
+.styles-zone:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #ffb906;
+  content: "";
+  z-index: -1;
+  width: 0;
+  transition: width 0.85s ease-in-out 0.5s, opacity 0.85s ease-in-out 0.5s;
+  opacity: 0;
+}
+
+.styles-zone.go {
+  color: #1d1d1f;
+}
+
+.styles-zone.go:before {
+  opacity: 1;
+  width: 100%;
+}
+
 @media (max-width: 1380px) {
   .main-tours__container {
     padding-top: 50%;

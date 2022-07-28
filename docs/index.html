@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 
 <head>
     <meta charset="UTF-8">
@@ -89,15 +89,17 @@
                     <div class="first-screen__wrapper">
                         <div class="first-screen__content">
                             <h1 class="main-title">Туры на Мальдивы</h1>
-                            <p class="section-descr">Вы сможете приобрести туры на Мальдивы из Алматы. На нашем сайте мы разместили цены на путевки на Мальдивы из Алматы в 2022 году. Чтобы подобрать подходящий тур для отдыха на Мальдивах выберите дату поездки</p>
+                            <p class="section-descr">
+                                - Golden opportunity to book your dream stay with <span class="styles-zone">-40% discount</span><br>
+                                - Booking <span class="styles-zone">24/7</span> from around the world<br>
+                                - Stay more, <span class="styles-zone">pay less</span><br>
+                            </p>
                             <div class="first-screen__btns">
                                 <a href="#" class="btn fillBtn">Подбор тура</a>
                                 <a href="#" class="btn ghostBtn" data-open-book>Оставить заявку</a>
                             </div>
                         </div>
-                        <!-- <div class="first-screen__bg-image">
-                            <img src="img/first-screen-bt.png" alt="">
-                        </div> -->
+
                     </div>
                 </div>
             </section>
@@ -1404,6 +1406,16 @@
         setTimeout(() => {
             document.querySelector('.main-preloader').classList.remove('show');
         }, 300);
+
+
+        const stylesZones = document.querySelectorAll('.styles-zone');
+        if (stylesZones) {
+            stylesZones.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('go');
+                }, index * 300);
+            });
+        }
     });
     const widgetElem = document.querySelector('.widget-elem');
     if (widgetElem) {

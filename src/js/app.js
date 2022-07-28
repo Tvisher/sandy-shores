@@ -135,7 +135,9 @@ $(function () {
         showMonthAfterYear: false,
         yearSuffix: ''
     };
-    $.datepicker.setDefaults($.datepicker.regional['ru']);
+    if (document.querySelector('html').getAttribute('lang') === 'ru-RU') {
+        $.datepicker.setDefaults($.datepicker.regional['ru']);
+    }
     $("#datepicker").datepicker({
         altFormat: "DD, d MM, yy",
         minDate: 0
